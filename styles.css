@@ -16,7 +16,7 @@ body {
    background-color: #162135;
    background: 73% top url("img/dayx.png");
    background-size: cover;
-   height: 845px;
+   height: 833px;
 }
 
 .sectionOne__main {
@@ -83,9 +83,8 @@ body {
 
 .sectionTwo {
    width: 100%;
-   height: 387px;
+   height: 360px;
    position: relative;
-   top: -12px;
    background-color: #FFF2E9;
 }
 
@@ -133,11 +132,60 @@ body {
 
 .sectionThree {
    position: relative;
+   text-align: center;
+   margin-bottom: 64px;
+}
+
+.sectionThree__map {
+   width: 76%;
+   padding-left: 70px;
+   position: relative;
+   top: -3px;
+}
+
+.sectionThree__map-small {
+   display: none;
+}
+
+.sectionThree__frame {
+   width: 463px;
+   height: 255px;
+   position: absolute;
+   top: 158px;
+   right: 196px;
+   color: #fff;
+   background-color: #E18370;
+   border-radius: 33px;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.frame__title {
+   position: relative;
+   top: 34px;
+   font: 36px/36px "gilroy-extrabold", sans-serif;
+   text-transform: uppercase;
+}
+
+.frame__subtitle {
+   position: relative;
+   top: 62px;
+   font: 26px/37px "gilroy-extrabold", sans-serif;
+}
+
+.sectionFour__title {
+   margin-bottom: 33px;
+   text-align: center;
+   font: 46px/46px "gilroy-extrabold", sans-serif;
+   text-transform: uppercase;
+}
+
+.sectionFour {
+   position: relative;
    max-width: 1920px;
    margin: 0 auto;
 }
 
-.sectionThree__title {
+.sectionFour__title {
    margin-top: 30px;
    margin-bottom: 53px;
    text-align: center;
@@ -145,7 +193,7 @@ body {
    text-transform: uppercase;
 }
 
-.sectionThree__subtitle {
+.sectionFour__subtitle {
    position: relative;
    top: 30px;
    left: 929px;
@@ -153,13 +201,13 @@ body {
    font: 34px/34px "gilroy-extrabold", sans-serif;
 }
 
-.sectionThree__circle {
+.sectionFour__circle {
    position: absolute;
    top: -8px;
    left: 3px;
 }
 
-.sectionThree__pics {
+.sectionFour__pics {
    position: relative;
    top: 12px;
    display: flex;
@@ -312,11 +360,11 @@ body {
 }
 
 @media (max-width: 1350px) {
-   .sectionThree__subtitle {
+   .sectionFour__subtitle {
       left: 887px;
    }
 
-   .sectionThree__circle {
+   .sectionFour__circle {
       top: 0;
       left: 3px;
    }
@@ -364,11 +412,16 @@ body {
 }
 
 @media (max-width: 1250px) {
-   .sectionThree__subtitle {
+   .sectionThree__map {
+      width: 90%;
+      padding: 0;
+   }
+
+   .sectionFour__subtitle {
       left: 820px;
    }
 
-   .sectionThree__circle {
+   .sectionFour__circle {
       display: none;
    }
 
@@ -398,7 +451,7 @@ body {
 }
 
 @media (max-width: 1170px) {
-   .sectionThree__subtitle {
+   .sectionFour__subtitle {
       left: 780px;
    }
 
@@ -409,7 +462,7 @@ body {
 
 
 @media (max-width: 1120px) {
-   .sectionThree__subtitle {
+   .sectionFour__subtitle {
       left: 770px;
    }
 
@@ -419,7 +472,7 @@ body {
 }
 
 @media (max-width: 1116px) {
-   .sectionThree__subtitle {
+   .sectionFour__subtitle {
       left: 748px;
    }
 
@@ -435,15 +488,15 @@ body {
 }
 
 @media (max-width: 1100px) {
-   .sectionThree__subtitle {
+   .sectionFour__subtitle {
       left: 685px;
    }
 
-   .sectionThree__title {
+   .sectionFour__title {
       margin-bottom: 76px;
    }
 
-   .sectionThree__circle {
+   .sectionFour__circle {
       display: none;
    }
 
@@ -475,7 +528,12 @@ body {
 }
 
 @media (max-width: 1024px) {
-   .sectionThree__subtitle {
+   .sectionThree__frame {
+      top: 131px;
+      right: 43px;
+   }
+
+   .sectionFour__subtitle {
       top: -24px;
       left: 650px;
       font-size: 31px;
@@ -504,7 +562,7 @@ body {
    }
 
    .sectionTwo {
-      height: 368px
+      height: 340px
    }
 
    .context__title {
@@ -535,13 +593,13 @@ body {
 }
 
 @media (max-width: 955px) {
-   .sectionThree__subtitle {
+   .sectionFour__subtitle {
       left: 612px;
    }
 }
 
 @media (max-width: 940px) {
-   .sectionThree__subtitle {
+   .sectionFour__subtitle {
       left: 600px;
    }
 }
@@ -559,11 +617,11 @@ body {
 }
 
 @media (max-width: 900px) {
-   .sectionThree__subtitle {
+   .sectionFour__subtitle {
       left: 200px;
    }
 
-   .sectionThree__pics {
+   .sectionFour__pics {
       flex-direction: column;
       align-items: center;
    }
@@ -599,12 +657,48 @@ body {
 
 
 @media (max-width: 768px) {
-   .sectionThree__title {
+   .sectionThree__map {
+      display: none;
+   }
+
+   .sectionThree__map-small {
+      display: block;
+      position: relative;
+      top: -15px;
+      width: 100%;
+   }
+
+   .sectionThree__frame {
+      width: 194px;
+      height: 128px;
+      border-radius: 10px;
+      right: 59px;
+      top: 150px;
+   }
+
+   .frame__title {
+      font-size: 16px;
+      line-height: 20px;
+      padding: 10px 10%;
+      top: 0;
+   }
+
+   .frame__subtitle {
+      font-size: 12px;
+      line-height: 15px;
+      top: 0;
+   }
+
+   .sectionThree {
+      margin-bottom: 0;
+   }
+
+   .sectionFour__title {
       margin-bottom: 60px;
       margin-top: 38px;
    }
 
-   .sectionThree__subtitle {
+   .sectionFour__subtitle {
       left: 141px;
    }
 
@@ -664,8 +758,7 @@ body {
    }
 
    .sectionTwo {
-      top: 0;
-      height: 387px;
+      height: 400px;
       border-radius: 0;
    }
 
@@ -791,11 +884,11 @@ body {
 }
 
 @media (max-width: 580px) {
-   .sectionThree__title {
+   .sectionFour__title {
       font-size: 40px;
    }
 
-   .sectionThree__subtitle {
+   .sectionFour__subtitle {
       left: calc((100% - 305px) / 2);
       text-align: center;
    }
@@ -851,6 +944,10 @@ body {
 }
 
 @media (max-width: 500px) {
+   .sectionTwo {
+      height: 350px;
+   }
+
    .pics__imgOne {
       width: 450px;
       height: 600px;
@@ -881,11 +978,11 @@ body {
 }
 
 @media (max-width: 450px) {
-   .sectionThree__title {
+   .sectionFour__title {
       font-size: 35px;
    }
 
-   .sectionThree__subtitle {
+   .sectionFour__subtitle {
       left: calc((100% - 295px) / 2);
       font-size: 30px;
    }
@@ -893,10 +990,6 @@ body {
    .pics__imgOne {
       width: 400px;
       height: 550px;
-   }
-
-   .sectionTwo {
-      height: 320px;
    }
 
    .dotGroup__dotsTwo {
@@ -929,22 +1022,27 @@ body {
 }
 
 @media (max-width: 400px) {
-   .sectionThree__title {
+   .sectionTwo {
+      height: 320px;
+   }
+
+   .sectionFour__title {
       font-size: 30px;
    }
 
-   .sectionThree__subtitle {
+   .sectionFour__subtitle {
       left: calc((100% - 246px) / 2);
       font-size: 25px;
    }
 
    .pics__imgOne {
-      height: 535px;
+      height: auto;
    }
 
    .pics__imgOne,
    .pics__imgTwo {
       width: 340px;
+      height: auto;
    }
 
    .dotGroup__dotsOne,
@@ -986,7 +1084,6 @@ body {
 
    .pics__imgOne,
    .pics__imgTwo {
-      height: 437px;
       width: 300px;
    }
 }
@@ -1000,18 +1097,16 @@ body {
       font-size: 19px;
    }
 
-   .sectionThree__title {
+   .sectionFour__title {
       font-size: 33px;
    }
 
    .pics__imgOne {
       width: 306px;
-      height: 450px;
    }
 
    .pics__imgTwo {
       width: 306px;
-      height: 450px;
    }
 
    .context__title {
@@ -1024,13 +1119,13 @@ body {
 }
 
 @media (min-width: 1366px) {
-   .sectionThree__subtitle {
+   .sectionFour__subtitle {
       left: 898px;
    }
 }
 
 @media (min-width: 1550px) {
-   .sectionThree__subtitle {
+   .sectionFour__subtitle {
       left: 983px;
    }
 
@@ -1048,11 +1143,11 @@ body {
 }
 
 @media (min-width: 1650px) {
-   .sectionThree__circle {
+   .sectionFour__circle {
       left: 71px;
    }
 
-   .sectionThree__subtitle {
+   .sectionFour__subtitle {
       left: 1035px;
    }
 
@@ -1070,11 +1165,11 @@ body {
 }
 
 @media (min-width: 1750px) {
-   .sectionThree__circle {
+   .sectionFour__circle {
       left: 121px;
    }
 
-   .sectionThree__subtitle {
+   .sectionFour__subtitle {
       left: 1079px;
    }
 
@@ -1092,7 +1187,7 @@ body {
 }
 
 @media (min-width: 1800px) {
-   .sectionThree__subtitle {
+   .sectionFour__subtitle {
       left: 1111px;
    }
 
@@ -1114,7 +1209,7 @@ body {
 }
 
 @media (min-width: 1850px) {
-   .sectionThree__subtitle {
+   .sectionFour__subtitle {
       left: 1131px;
    }
 
@@ -1124,6 +1219,23 @@ body {
 }
 
 @media (min-width: 1900px) {
+   .sectionThree__frame {
+      width: 533px;
+      height: 307px;
+      top: 244px;
+      right: 304px;
+   }
+
+   .frame__title {
+      top: 53px;
+      font: 38px/38px "gilroy-extrabold", sans-serif;
+   }
+
+   .frame__subtitle {
+      top: 95px;
+      font: 30px/37px "gilroy-extrabold", sans-serif;
+   }
+
    .dotGroup__dotsOne {
       left: 1010px;
    }
@@ -1132,7 +1244,7 @@ body {
       left: 1010px;
    }
 
-   .sectionThree__subtitle {
+   .sectionFour__subtitle {
       left: 1162px;
    }
 
