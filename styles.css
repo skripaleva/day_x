@@ -187,6 +187,7 @@ body {
 
 .sectionFour__title {
    margin-top: 30px;
+   margin-bottom: 0;
    text-align: center;
    font: 46px/46px "gilroy-extrabold", sans-serif;
    text-transform: uppercase;
@@ -719,7 +720,7 @@ body {
    }
 
    .sectionTitle {
-      margin-top: -auto;
+      margin-top: auto;
    }
 
    .sectionSeven__form,
@@ -818,15 +819,15 @@ body {
 
    .content__title {
       width: 75%;
-      font-size: 55px;
-      line-height: 27px;
+      font-size: 50px;
+      line-height: 62px;
       margin-bottom: 27px;
       margin-right: 10px;
    }
 
    .content__subtitle {
-      font-size: 20px;
-      line-height: 14px;
+      font-size: 24px;
+      line-height: 28px;
       margin-bottom: 44px;
       letter-spacing: -0.1px;
       margin-right: 5px;
@@ -1052,12 +1053,42 @@ body {
       font-size: 32px;
       line-height: 39px;
    }
+}
+
+@media (min-width: 370px) and (max-width: 480px){
+   .sectionOne {
+      height: 761px;
+   }
+
+   .sectionOne__content {
+      top: 44px;
+   }
+
+   .content__logo {
+      width: 141px;
+      height: auto;
+      margin-bottom: 57px;
+   }
+
+   .content__date {
+      margin-bottom: 129px;
+      background: linear-gradient(180deg, transparent 57%, #E18370 57%);
+      font: 30px/37px "gilroy-extrabold", sans-serif;
+   }
+
+   .content__title {
+      margin-bottom: 12px;
+   }
+
+   .content__subtitle {
+      margin-bottom: 167px;
+   }
 
    .context__title::before {
-      top: -136px;
-      left: -1px;
-      width: 47px;
-      height: 204px;
+      top: -203px;
+      left: -38px;
+      width: 83px;
+      height: 307px;
       background-size: contain;
    }
 }
@@ -1175,6 +1206,14 @@ body {
    .pics__imgTwo {
       width: 300px;
    }
+
+   .context__title::before {
+      top: -136px;
+      left: -1px;
+      width: 47px;
+      height: 204px;
+      background-size: contain;
+   }
 }
 
 @media (max-width: 320px) {
@@ -1209,7 +1248,8 @@ body {
 
 @media (min-width: 1366px) {
    .sectionFour__subtitle {
-      left: 898px;
+      top: 54px;
+      left: 937px;
    }
 }
 
