@@ -133,14 +133,13 @@ body {
 .sectionThree {
    position: relative;
    text-align: center;
-   margin-bottom: 64px;
 }
 
 .sectionThree__map {
    width: 76%;
    padding-left: 70px;
    position: relative;
-   top: -3px;
+   top: -34px;
 }
 
 .sectionThree__map-small {
@@ -151,7 +150,7 @@ body {
    width: 463px;
    height: 255px;
    position: absolute;
-   top: 158px;
+   top: 169px;
    right: 196px;
    color: #fff;
    background-color: #E18370;
@@ -181,13 +180,13 @@ body {
 
 .sectionFour {
    position: relative;
+   top: -14px;
    max-width: 1920px;
    margin: 0 auto;
 }
 
 .sectionFour__title {
    margin-top: 30px;
-   margin-bottom: 53px;
    text-align: center;
    font: 46px/46px "gilroy-extrabold", sans-serif;
    text-transform: uppercase;
