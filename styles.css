@@ -276,12 +276,27 @@ body {
    font: 26px/26px "gilroy-light", sans-serif;
 }
 
+.sectionTitle {
+   margin-top: 70px;
+}
+
+.sectionTitle__title {
+   margin-bottom: 30px;
+   text-align: center;
+   font: 46px/46px "gilroy-extrabold", sans-serif;
+}
+
+.sectionTitle__subtitle {
+   text-align: center;
+   font: 34px/34px "gilroy-light", sans-serif;
+}
+
 .sectionSeven__form {
    width: 499px;
    padding-bottom: 100px;
    position: absolute;
-   top: 83px;
-   right: calc((100% - 499px) / 2);
+   top: 102px;
+   right: calc((140% - 499px) / 2);
    display: flex;
    flex-direction: column;
    background: #EBB9B9;
@@ -302,12 +317,38 @@ body {
    color: #fff;
 }
 
+.sectionSeven__formTwo {
+   width: 499px;
+   padding-bottom: 100px;
+   position: absolute;
+   top: 102px;
+   right: calc((60% - 499px) / 2);
+   display: flex;
+   flex-direction: column;
+   background: #EBB9B9;
+   border-radius: 41px;
+   box-shadow: 7px 7px 7px #D97662;
+}
+
+.formTwo__button {
+   margin-bottom: -215px;
+   display: inline-block;
+}
+
+.formTwo__title {
+   margin: 0 auto;
+   margin-top: 60px;
+   margin-bottom: 7px;
+   font: 36px/36px "gilroy-extrabold", sans-serif;
+   color: #fff;
+}
+
 .footer {
    position: relative;
    width: 100%;
    height: 125px;
    padding-top: 64px;
-   margin-top: 60px;
+   margin-top: 44px;
    display: flex;
    background-color: #E18370;
 }
@@ -380,6 +421,14 @@ body {
 
    .sectionSeven__content {
       left: 100px;
+   }
+
+   .sectionSeven__form {
+      right: calc((147% - 499px) / 2);
+   }
+
+   .sectionSeven__formTwo {
+      right: calc((53% - 499px) / 2);
    }
 
    .footer {
@@ -590,11 +639,31 @@ body {
    .title__des {
       font-size: 52px;
    }
+
+   .sectionTitle__subtitle {
+      font-size: 31px;
+      line-height: 31px;
+   }
+
+   .sectionSeven__form {
+      width: 422px;
+      right: calc((155% - 499px) / 2);
+   }
+
+   .sectionSeven__formTwo {
+      width: 422px;
+      right: calc((61% - 499px) / 2);
+   }
 }
 
 @media (max-width: 955px) {
    .sectionFour__subtitle {
       left: 612px;
+   }
+
+   .sectionTitle__subtitle {
+      font-size: 29px;
+      line-height: 29px;
    }
 }
 
@@ -647,11 +716,24 @@ body {
    }
 
    .sectionSeven {
-      top: -56px;
+      top: 35px;
+   }
+
+   .sectionTitle {
+      margin-top: -auto;
+   }
+
+   .sectionSeven__form,
+   .sectionSeven__formTwo {
+      width: 400px;
+   }
+
+   .sectionSeven__form {
+      right: calc((161% - 499px) / 2);
    }
 
    .footer {
-      margin-top: -46px;
+      margin-top: 34px;
    }
 }
 
