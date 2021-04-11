@@ -256,6 +256,30 @@ body {
    top: 50px;
    background-color: #E18370;
    background-size: cover;
+   background: linear-gradient(to right, #E18370 50%, #FFF2E9 50%);
+   overflow: hidden;
+}
+
+.sectionSeven::before {
+   position: absolute;
+   top: 27px;
+   left: 49px;
+   content: "";
+   background: url(img/dots7.svg);
+   width: 307px;
+   height: 87px;
+   z-index: 0;
+}
+
+.sectionSeven::after {
+   position: absolute;
+   top: 27px;
+   right: -269px;
+   content: "";
+   background: url(img/ellipse.svg) no-repeat;
+   width: 574px;
+   height: 574px;
+   z-index: 0;
 }
 
 .sectionSeven__pic {
@@ -310,6 +334,7 @@ body {
    background: #EBB9B9;
    border-radius: 41px;
    box-shadow: 7px 7px 7px #D97662;
+   z-index: 1;
 }
 
 .form__button {
@@ -336,6 +361,7 @@ body {
    background: #EBB9B9;
    border-radius: 41px;
    box-shadow: 7px 7px 7px #D97662;
+   z-index: 1;
 }
 
 .formTwo__button {
@@ -755,6 +781,22 @@ body {
 
    .sectionSeven {
       top: 35px;
+      background: linear-gradient(to bottom, #E18370 50%, #FFF2E9 50%);
+   }
+
+   .sectionSeven::before {
+      left: 0;
+      top: 8px;
+      background: url(img/dots7-mob.svg);
+      width: 210px;
+      height: 65px;
+   }
+
+   .sectionSeven::after {
+      top: 727px;
+      width: 474px;
+      height: 474px;
+      background-size: contain;
    }
 
    .sectionTitle {
@@ -835,7 +877,7 @@ body {
    }
 
    .sectionThree {
-      margin-bottom: 112px;
+      margin-bottom: 50px;
    }
 
    .sectionFour__title {
@@ -940,7 +982,7 @@ body {
       margin: 0 auto;
    }
 
-   .sectionSeven__form {
+   .sectionSeven__form,  .sectionSeven__formTwo {
       width: 420px;
       right: calc((100% - 420px) / 2);
    }
@@ -1069,7 +1111,7 @@ body {
    }
 
    .sectionFour {
-      margin-bottom: 80px;
+      margin-bottom: 100px;
    }
 
    .sectionSeven {
@@ -1103,6 +1145,10 @@ body {
 }
 
 @media (max-width: 550px) {
+   .sectionThree {
+      margin-bottom: 80px;
+   }
+
    .dotGroup__dotsTwo {
       display: none;
    }
@@ -1122,6 +1168,10 @@ body {
 @media (max-width: 500px) {
    .sectionTwo {
       height: 350px;
+   }
+
+   .sectionThree {
+      margin-bottom: 110px;
    }
 
    .pics__imgOne {
