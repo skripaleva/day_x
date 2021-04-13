@@ -1358,8 +1358,8 @@ body {
       width: 82%;
    }
 
-
    .sectionFour__title {
+      margin-top: 0;
       font-size: 30px;
    }
 
@@ -1467,6 +1467,14 @@ body {
 }
 
 @media (max-width: 320px) {
+   .sectionThree {
+      margin-bottom: 90px;
+   }
+
+   .sectionThree__frame {
+      top: 170px;
+   }
+
    .content__title {
       font-size: 50px;
    }
