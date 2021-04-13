@@ -868,7 +868,7 @@ body {
       font-size: 26px;
       line-height: 35px;
       top: 0;
-      width: 75%;
+      width: 74%;
       margin: 0 auto;
    }
 
@@ -1355,11 +1355,11 @@ body {
    .frame__subtitle {
       font-size: 20px;
       line-height: 25px;
-      width: 85%;
+      width: 82%;
    }
 
-
    .sectionFour__title {
+      margin-top: 0;
       font-size: 30px;
    }
 
@@ -1467,6 +1467,14 @@ body {
 }
 
 @media (max-width: 320px) {
+   .sectionThree {
+      margin-bottom: 60px;
+   }
+
+   .sectionThree__frame {
+      top: 170px;
+   }
+
    .content__title {
       font-size: 50px;
    }
@@ -1617,7 +1625,7 @@ body {
 
    .frame__subtitle {
       top: 95px;
-      font: 30px/37px "gilroy-extrabold", sans-serif;
+      font: 30px/37px "gilroy-light", sans-serif;
    }
 
    .dotGroup__dotsOne {
